@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/coffee_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cappuccino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_dialog_btn"
+        android:src="@drawable/ic_baseline_close_24"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coffee_name"
+        android:text="Capuccino"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/coffee_pic"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        app:layout_constraintTop_toTopOf="@id/coffee_name"
+        app:layout_constraintStart_toEndOf="@id/coffee_name"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="2dp"
+        android:textSize="17sp"
+        android:text="price"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:id="@+id/order_btn"
+        app:layout_constraintTop_toBottomOf="@id/coffee_name"
+        app:layout_constraintStart_toEndOf="@id/coffee_pic"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
